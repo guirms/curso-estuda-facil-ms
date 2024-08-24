@@ -1,0 +1,19 @@
+stages:
+  - release
+
+variables:
+  CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE
+
+release:
+  only:
+    - main
+  image: docker:latest
+  stage: release
+  services:
+    - docker:dind
+  before_script:
+    - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
+  script:
+    - echo $API_GPT > api_key.txt
+    - docker build -t $CONTAINER_RELEASE_IMAGE . ;
+    - docker push $CONTAINER_RELEASE_IMAGE
