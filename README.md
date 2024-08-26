@@ -23,7 +23,7 @@ Para executar o projeto com sucesso, você deve atender os seguintes requisitos:
 Para criar uma instância da API localmente, siga o passo a passo:
 
 - Clone o projeto na sua pasta de preferência através do comando `git clone https://github.com/guirms/curso-estuda-facil-ms.git`
-- No terminal, dentro da pasta raíz do projeto, execute o comando `pip install -r ./requirements.txt`
+- Dentro da pasta raíz do projeto, execute o comando `pip install -r ./requirements.txt`
 - Por fim, crie a instância da API através do comando `fastapi run main.py --port 8000`
 
 ## Execute a aplicação através do Docker
