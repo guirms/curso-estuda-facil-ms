@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/guirms/curso-estuda-facil-ms?style=for-the-badge&logo=GitHub&logoColor=%23FFFF&color=%23087ABB)
 ![GitHub forks](https://img.shields.io/github/forks/guirms/curso-estuda-facil-ms?style=for-the-badge&logo=GitHub&logoColor=%23FFFF&color=%23087ABB)
 
-Uma API RESTful utilizada como microsserviço para a [API do Estuda Fácil](https://github.com/guirms/curso-estuda-facil-api) e projetada para criar planos de estudo personalizados para avaliações, utilizando a inteligência artificial da [API da OpenAI](https://openai.com/index/openai-api/).
+Uma API RESTful utilizada como microsserviço para a [API do Estuda Fácil](https://github.com/guirms/curso-estuda-facil-api) e projetada para criar planos de estudo personalizados para avaliações, utilizando a inteligência artificial da [OpenAI](https://openai.com/index/openai-api/).
 
 # Principais tecnologias utilizadas
 <img src="https://github.com/user-attachments/assets/7a7825a8-a399-4bb2-9aff-427a2abbb5e0" alt="drawing" width="50"/>
