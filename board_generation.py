@@ -17,13 +17,7 @@ def generate_local_board() -> str:
                 {
                     'name': 'Causas da Primeira Guerra Mundial',
                     'description': 'Exploração das razões que levaram ao conflito',
-                    'subTasks': [
-                        'Alianças políticas',
-                        'Imperialismo',
-                        'Nacionalismos',
-                        'Assassinato de Sarajevo',
-                        'Consequências pré-guerra'
-                    ]
+                    'studyTime': 60
                 }
             ]
         },
@@ -33,13 +27,7 @@ def generate_local_board() -> str:
                 {
                     'name': 'Desenvolvimento da Primeira Guerra Mundial',
                     'description': 'Análise dos principais eventos durante o conflito',
-                    'subTasks': [
-                        'Frente Ocidental',
-                        'Frente Oriental',
-                        'Batalha de Verdun',
-                        'Batalha do Somme',
-                        'Entrada dos EUA'
-                    ]
+                    'studyTime': 150
                 }
             ]
         },
@@ -49,13 +37,7 @@ def generate_local_board() -> str:
                 {
                     'name': 'Tratados e Consequências da Primeira Guerra Mundial',
                     'description': 'Estudo dos acordos pós-conflito e impacto global',
-                    'subTasks': [
-                        'Tratado de Versalhes',
-                        'Liga das Nações',
-                        'Reparação de guerra',
-                        'Revoluções pós-guerra',
-                        'Nova configuração europeia'
-                    ]
+                    'studyTime': 180
                 }
             ]
         },
@@ -65,13 +47,7 @@ def generate_local_board() -> str:
                 {
                     'name': 'Impacto Social e Econômico da Primeira Guerra Mundial',
                     'description': 'Avaliação dos efeitos no cotidiano e na economia mundial',
-                    'subTasks': [
-                        'Mortalidade e feridos',
-                        'Crise econômica',
-                        'Ascensão de ditadores',
-                        'Movimento sufragista',
-                        'Reconstrução pós-guerra'
-                    ]
+                    'studyTime': 90
                 }
             ]
         },
@@ -81,13 +57,7 @@ def generate_local_board() -> str:
                 {
                     'name': 'Legado da Primeira Guerra Mundial',
                     'description': 'Reflexão sobre a influência duradoura do conflito',
-                    'subTasks': [
-                        'Pacifismo',
-                        'Avanços tecnológicos',
-                        'Arte do pós-guerra',
-                        'Repensando fronteiras',
-                        'Memoriais e patrimônio histórico'
-                    ]
+                    'studyTime': 150
                 }
             ]
         }
@@ -108,7 +78,7 @@ def generate_openai_board(theme: str, days_until_exam: str) -> str:
                 {
                     'name': String,
                     'description': String,
-                    'subTasks': String[]
+                    'studyTime': String
                 }
             ]
         }
@@ -121,8 +91,6 @@ def generate_openai_board(theme: str, days_until_exam: str) -> str:
     Provide a list of objects called with the current day and another list of objects with the contents and their respective descriptions, study times and subtasks.
     The description must be no more than 20 words.
     The Study times should be in minutes.
-    The subtasks should be a list of smaller topics related to the main topic of study. 
-    Each subtask list item should be no more than five words long and in total there should be no more than five subtasks per content.
     Return all names and descriptions in portuguese.
     The theme input will also be in portuguese.
     The main theme of my exam is: {theme}. I want to study it in {days_until_exam} days'''
