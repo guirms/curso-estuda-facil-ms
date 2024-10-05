@@ -78,7 +78,7 @@ def generate_openai_board(theme: str, days_until_exam: str) -> str:
                 {
                     'name': String,
                     'description': String,
-                    'studyTime': String
+                    'studyTime': Number
                 }
             ]
         }
